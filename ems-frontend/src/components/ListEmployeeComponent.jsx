@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { listEmployees } from '../services/EmployeeService'
 
-const ListEmployeeCompoment = () => {
+const ListEmployeeComponent = () => {
 
    const [employees, setEmployees] = useState([])
 
@@ -41,4 +41,4 @@ const ListEmployeeCompoment = () => {
     )
 }
 
-export default ListEmployeeCompoment
+export default ListEmployeeComponent
