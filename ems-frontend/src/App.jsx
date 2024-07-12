@@ -5,6 +5,7 @@ import FooterComponent from './components/FooterComponent'
 import EmployeeComponent from './components/EmployeeComponent'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ListDepartmentComponent from './components/ListDepartmentComponent'
+import DepartmentComponent from './components/DepartmentComponent'
 
 function App() {
 
@@ -20,10 +21,12 @@ function App() {
           {/* http://localhost:3000/add-employee */}
           <Route path='/add-employee' element={<EmployeeComponent />}></Route>
           {/* http://localhost:3000/edit-employee/1 */}
-          <Route path ='/edit-employee/:id' element = {<EmployeeComponent/>} ></Route>
+          <Route path='/edit-employee/:id' element={<EmployeeComponent />} ></Route>
           {/* http://localhost:3000/departments */}
-          <Route path ='/departments' element = {<ListDepartmentComponent/>} ></Route>
-        
+          <Route path='/departments' element={<ListDepartmentComponent />} ></Route>
+          {/* http://localhost:3000/departments/add-department*/}
+          <Route path='/add-department' element={<DepartmentComponent />}></Route>
+
         </Routes>
 
         <FooterComponent />

@@ -19,6 +19,7 @@ const ListEmployeeComponent = () => {
             console.error(error);
         })
     }
+    
     function addNewEmployee(){
         navigator('/add-employee')
     }
